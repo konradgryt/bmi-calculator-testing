@@ -1,0 +1,37 @@
+<% include ../partials/header %>
+
+<div class="alert alert-success">
+    <strong>Note:</strong>
+    Your body mass index is: 
+    <strong>
+        <%if  (Math.round(bmi * 100) / 100 < 18.5) { %>
+            <%= Math.round(bmi * 100) / 100 %>
+            <br />
+            <span id='result'>You are underweight</span>
+        <% } %>
+    </strong>
+    <strong>
+        <%if (Math.round(bmi * 100) / 100 >= 18.5 && Math.round(bmi * 100) / 100 < 24.9) { %>
+            <%= Math.round(bmi * 100) / 100 %> 
+            <br />
+            <span id='result'>You have a healthy weight</span>
+        <% } %>
+    </strong>
+    <strong>
+        <%if (Math.round(bmi * 100) / 100 >= 24.9 && Math.round(bmi * 100) / 100 < 30) { %>
+            <%= Math.round(bmi * 100) / 100 %>
+            <br />
+            <span id='result'>You are overweight</span>
+        <% } %>
+    </strong>
+    <strong>
+        <%if (Math.round(bmi * 100) / 100 > 30) { %>
+            <%= Math.round(bmi * 100) / 100 %> 
+            <br />
+            <span id='result'>You are obese</span>
+        <% } %>
+    </strong>
+</div>
+
+
+<% include ../partials/footer %>

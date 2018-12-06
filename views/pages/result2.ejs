@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+<div class="alert alert-success">
+    <strong>Note:</strong>
+    Your waist to hip index suggests that:
+        <%if  (sex === "male" && waistToHip < 0.9 || sex === "female" && waistToHip < 0.80 ) { %>
+            <br />
+            <span id='result'>You have a normal weight</span>
+        <% } %>
+        <%if  (sex === "male" && 0.9 <= waistToHip && waistToHip < 1 || sex === "female" && 0.8 <= waistToHip && waistToHip < 0.85 ) { %>
+            <br />
+            <span id='result'>You are overweight</span>
+        <% } %>
+        <%if  (sex === "male" &&  waistToHip >= 1 || sex === "female" && waistToHip >= 0.85 ) { %>
+            <br />
+            <span id='result'>You are obese</span>
+        <% } %>
+    <strong>
+</div>
+
+
+<% include ../partials/footer %>
