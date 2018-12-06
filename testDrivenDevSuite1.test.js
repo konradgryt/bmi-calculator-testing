@@ -5,7 +5,7 @@ describe('Test #1 Underweight result', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('Underweight', async () => {
+    it('Form works and identifies underweight person', async () => {
         await page.click("input[name=cm]");
         await page.type("input[name=cm]", "100");
         await page.click("input[name=kg]");
@@ -21,7 +21,7 @@ describe('Test #2 Healthy weight result', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('Healthy weight', async () => {
+    it('Form works and identifies person with healthy weight', async () => {
         await page.click("input[name=cm]");
         await page.type("input[name=cm]", "100");
         await page.click("input[name=kg]");
@@ -37,7 +37,7 @@ describe('Test #3 Overweight result', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('Overweight', async () => {
+    it('Form works and identifies overweighted person', async () => {
         await page.click("input[name=cm]");
         await page.type("input[name=cm]", "100");
         await page.click("input[name=kg]");
@@ -53,7 +53,7 @@ describe('Test #4 Obese result', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('Obese', async () => {
+    it('Form works and identifies obese person', async () => {
         await page.click("input[name=cm]");
         await page.type("input[name=cm]", "100");
         await page.click("input[name=kg]");
