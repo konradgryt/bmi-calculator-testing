@@ -53,9 +53,10 @@ describe('TEST#2 Test for two negative values, both in cm ang kg', () => {
 });
 
 /*
- * Third test to determine if application is working properly when value of cm is positive and value of kg is negative
+ * Third test to determine if application is working properly
+ * when value of cm is positive and value of kg is negative
  */
- 
+
 describe('TEST#3 Test for positive value in cm and negative in kg', () => {
     beforeAll(async () => {
         await page.goto(APP_ADDRESS);
@@ -70,9 +71,10 @@ describe('TEST#3 Test for positive value in cm and negative in kg', () => {
         await page.waitForSelector(".alert");
     });
 });
- 
+
 /*
- * Fourth test to determine if application is working properly when value of cm is negative and value of  kg is positive
+ * Fourth test to determine if application is working properly
+ * when value of cm is negative and value of kg is positive
  */
  
 describe('TEST#4 Test for negative value in cm and postivie in kg', () => {
@@ -91,7 +93,8 @@ describe('TEST#4 Test for negative value in cm and postivie in kg', () => {
 });
 
 /*
- * Fourth test to determine if application is working properly when value of cm is negative and value of  kg is positive
+ * Fifth test to determine if application is rendering the same site
+ * when user presses button while fields are empty
  */
  
 describe('TEST#5 Test for empty input fields ', () => {
@@ -108,7 +111,8 @@ describe('TEST#5 Test for empty input fields ', () => {
 });
 
 /*
- * Fourth test to determine if application is working properly when value of cm is negative and value of  kg is positive
+ * Sixth test to determine if application is working properly when
+ * user puts strings instead of numbers in fields
  */
  
 describe('TEST#6 Testcase something 2', () => {
