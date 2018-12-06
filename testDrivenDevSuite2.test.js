@@ -5,7 +5,7 @@ describe('Test#1 Male normal weight', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('ssss', async () => {
+    it('Form works and identifies males with normal weight', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "male");
         await page.click("input[name=waist]");
@@ -23,7 +23,7 @@ describe('Test#2 Female normal weight', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('zzzzz', async () => {
+    it('Form works and identifies females with normal weight', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "female");
         await page.click("input[name=waist]");
@@ -41,7 +41,7 @@ describe('Test#3 Male overweight', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('cccccccccc', async () => {
+    it('Form works and identifies overweighted males', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "male");
         await page.click("input[name=waist]");
@@ -59,7 +59,7 @@ describe('Test#4 Female overweight', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('2222', async () => {
+    it('Form works and identifies overweighted females', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "female");
         await page.click("input[name=waist]");
@@ -77,7 +77,7 @@ describe('Test#5 Male obese', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('wadwad', async () => {
+    it('Form works and identifies obese males', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "male");
         await page.click("input[name=waist]");
@@ -95,7 +95,7 @@ describe('Test#6 Female obese', () => {
         await page.goto(APP_ADDRESS);
     });
  
-    it('awdawdaw', async () => {
+    it('Form works and identifies obese females', async () => {
         await page.click("input[name=sex]");
         await page.type("input[name=sex]", "female");
         await page.click("input[name=waist]");
